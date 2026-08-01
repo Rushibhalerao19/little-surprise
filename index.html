@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Surprise</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,600&family=Poppins:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="hearts-bg" id="heartsBg"></div>
+
+  <div class="wrap">
+    <h1>A Little Surprise</h1>
+    <p class="sub">For My Favorite Person 💗</p>
+
+    <button id="openBtn">Few Questions For You</button>
+
+    <div class="card" id="quizCard">
+      <div class="progress-dots" id="dots"></div>
+
+      <!-- Question 1 -->
+      <div class="question" id="q1">
+        <p class="q-text">Are you my girlfriend?</p>
+        <div class="options">
+          <button class="btn btn-no" data-q="1" data-ans="no">No</button>
+          <button class="btn btn-yes" data-q="1" data-ans="yes">Yes, obviously</button>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question" id="q2" style="display:none;">
+        <p class="q-text">Do you think about me randomly during the day?</p>
+        <div class="options">
+          <button class="btn btn-no" data-q="2" data-ans="no">No</button>
+          <button class="btn btn-yes" data-q="2" data-ans="yes">All the time</button>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question" id="q3" style="display:none;">
+        <p class="q-text">Do you think I'm a little annoying sometimes?</p>
+        <div class="options">
+          <button class="btn btn-no" data-q="3" data-ans="no">No</button>
+          <button class="btn btn-yes" data-q="3" data-ans="yes">Yes, but I love you anyway</button>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question" id="q4" style="display:none;">
+        <p class="q-text">Do you love me?</p>
+        <div class="options">
+          <button class="btn btn-no" data-q="4" data-ans="no">No</button>
+          <button class="btn btn-yes" data-q="4" data-ans="yes">Yes</button>
+        </div>
+      </div>
+
+      <!-- Finale -->
+      <div class="finale" id="finale">
+        <span class="heart-icon">💐</span>
+        <h2>Happy Girlfriend's Day</h2>
+        <p>
+          You make ordinary days feel special just by being in them.
+          Thank you for your laugh, your patience, and your love.
+          Here's to us, today and always.<br>💗
+        </p>
+      </div>
+    </div>
+
+    <footer>Made with all my heart, just for you. ♡</footer>
+  </div>
+
+  <audio id="yesSound" src="./assets/yes.mp3" preload="auto"></audio>
+  <audio id="noSound" src="./assets/no.mp3" preload="auto"></audio>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
